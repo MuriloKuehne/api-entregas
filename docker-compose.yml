@@ -4,6 +4,6 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRESQL_USERNAME: postgres
-      - POSTGRESQL_PASSWORD: murilo123
-      - POSTGRESQL_DB: api-entregas
+      - POSTGRESQL_USERNAME=postgres
+      - POSTGRESQL_PASSWORD=murilo123
+      - POSTGRESQL_DB=api-entregas
