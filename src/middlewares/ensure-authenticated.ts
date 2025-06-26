@@ -38,3 +38,5 @@ function ensureAuthenticated(
     throw new AppError("JWT token is missing or invalid", 401)
   }
 }
+
+export { ensureAuthenticated }
