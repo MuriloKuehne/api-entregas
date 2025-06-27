@@ -27,7 +27,9 @@ class DeliveryLogsController {
     }
 
     if (delivery.status === "pending") {
-      throw new AppError("Change Status to shipped")
+      throw new AppError(
+        "Your order is being prepared. Wait the Salesperson update the shipping status to shipped"
+      )
     }
 
     await prisma.deliveryLog.create({
